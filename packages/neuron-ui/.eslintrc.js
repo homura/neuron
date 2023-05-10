@@ -49,7 +49,7 @@ module.exports = {
         ignoreRestSiblings: false,
       },
     ],
-    'arrow-parens': [2, 'as-needed'],
+    'arrow-parens': 'off',
     'max-len': [
       2,
       {

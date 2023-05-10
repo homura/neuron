@@ -33,6 +33,7 @@ export enum RoutePath {
   NFTSend = '/nft',
   ImportHardware = '/*/import-hardware',
   OfflineSign = '/*/offline-sign',
+  WalletConnect = '/walletconnect',
 }
 
 export enum CapacityUnit {

@@ -1,8 +1,8 @@
-import React, { useMemo } from 'react'
-import { useHistory, useLocation } from 'react-router-dom'
-import { useTranslation } from 'react-i18next'
+import React, {useMemo} from 'react'
+import {useHistory, useLocation} from 'react-router-dom'
+import {useTranslation} from 'react-i18next'
 
-import { useState as useGlobalState, useDispatch } from 'states'
+import {useDispatch, useState as useGlobalState} from 'states'
 
 import Overview from 'components/Overview'
 import WalletWizard from 'components/WalletWizard'
@@ -22,10 +22,11 @@ import SUDTReceive from 'components/SUDTReceive'
 import ImportHardware from 'components/ImportHardware'
 import OfflineSign from 'components/OfflineSign'
 import NFTSend from 'components/NFTSend'
+import WalletConnect from 'components/WalletConnect'
 
-import { RoutePath, useOnDefaultContextMenu, useRoutes, useOnLocaleChange } from 'utils'
+import {RoutePath, useOnDefaultContextMenu, useOnLocaleChange, useRoutes} from 'utils'
 
-import { useSubscription, useSyncChainData, useOnCurrentWalletChange } from './hooks'
+import {useOnCurrentWalletChange, useSubscription, useSyncChainData} from './hooks'
 
 export const mainContents: CustomRouter.Route[] = [
   {
@@ -141,6 +142,12 @@ export const mainContents: CustomRouter.Route[] = [
     exact: true,
     component: NFTSend,
   },
+  {
+    name: `WalletConnect`,
+    path: RoutePath.WalletConnect,
+    exact: false,
+    component: WalletConnect,
+  }
 ]
 
 const MainContent = () => {

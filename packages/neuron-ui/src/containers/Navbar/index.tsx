@@ -52,6 +52,12 @@ const menuItems = [
     experimental: true,
   },
   { name: 'navbar.s-udt', key: RoutePath.SUDTAccountList.slice(1), url: RoutePath.SUDTAccountList, experimental: true },
+  {
+    name: 'navbar.walletconnect',
+    key: RoutePath.WalletConnect.slice(1),
+    url: RoutePath.WalletConnect,
+    experimental: true,
+  },
 ]
 
 const Navbar = () => {

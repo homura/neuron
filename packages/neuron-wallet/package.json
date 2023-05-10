@@ -17,7 +17,7 @@
   "main": "dist/main.js",
   "license": "MIT",
   "scripts": {
-    "start": "electron .",
+    "start": "electron . --proxy-server=127.0.0.1:7890",
     "build": "ttsc",
     "watch": "ttsc -w",
     "start:dev": "yarn run build && electron .",

@@ -19,7 +19,8 @@
     "yarn": ">= 1.14"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "examples/*"
   ],
   "scripts": {
     "bootstrap": "npx cross-env lerna bootstrap && lerna link",
@@ -55,6 +56,7 @@
     "husky": "8.0.3",
     "lerna": "5.6.2",
     "ncp": "2.0.0",
+    "parcel": "2.8.3",
     "ts-jest": "27.1.5",
     "typescript": "4.8.3",
     "wait-on": "6.0.1"
