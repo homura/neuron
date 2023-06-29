@@ -37,7 +37,10 @@ const env = {
   isDevMode,
   isTestMode,
   fileBasePath: path.resolve(app.getPath('userData'), fileBase),
+
+
   mainURL: isDevMode ? 'http://localhost:3000' : `file://${path.join(__dirname, '../dist/neuron-ui/index.html')}`,
 }
 
 export default env
+
